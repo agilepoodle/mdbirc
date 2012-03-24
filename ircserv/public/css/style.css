@@ -25,6 +25,10 @@ color: white;
 text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 #page {
 background-color: #ddd;
 width: 750px;
