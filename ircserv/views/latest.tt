@@ -2,7 +2,11 @@
 <div id="all">
   <ul>
   <% FOREACH line IN irc %>
-    <li><b><% line.channel %>:<% line.nick %></b> <% line.msg %>(<i>tags: <% line.tags %></i>)</li>
+    <li><b><% line.channel %>:<% line.nick %></b> <% line.msg %>&nbsp;(<i>tags: 
+        <% FOREACH tag IN line.tags %>
+            <% tag %>
+        <% END %>
+    </i>)</li>
   <% END %>
   </ul>
 </div> 
