@@ -33,7 +33,7 @@ sub said {
 	'channel' => $msg->{channel},
 	'nick' => $msg->{who},
 	'msg' => $msg->{body},
-	'tags' => (),
+	'tags' => [],
 	'date' => time(),
     };
 
