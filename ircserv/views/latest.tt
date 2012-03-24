@@ -1,8 +1,8 @@
 
 <div id="all">
   <ul>
-  <% FOREACH line IN list %>
-    <li>[<% line.channel %>:<% line.nick %>] <% line.msg %></li>
+  <% FOREACH line IN irc %>
+    <li><b><% line.channel %>:<% line.nick %></b> <% line.msg %>(<i>tags: <% line.tags %></i>)</li>
   <% END %>
   </ul>
 </div> 
