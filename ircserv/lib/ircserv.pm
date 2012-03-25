@@ -25,4 +25,13 @@ get '/' => sub {
     template 'latest',  \%found_lines;
 };
 
+get '/tag/:tag' => sub {
+    my $tag = params->{tag};
+    my $irc_lines = $coll->find({'tags' => $tag})->limit(100);
+    my %found_lines = ( 'irc' => [] );
+    push @{ $found_lines{'irc'} }, $irc_lines->all();
+    debug(%found_lines);
+    template 'tags',  \%found_lines;
+};
+
 true;
