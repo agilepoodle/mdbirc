@@ -1,8 +1,0 @@
-MDBIrc
-======
-
-Simple experiment with an irc bot, MongoDB and [Perl Dancer](http://perldancer.org/) webframework. 
-
-Irc bot stores all irc messages into MongoDB with tags that are strings that start with a `#` characrer.
-
-The web server then displays irc messages and creates searchable tags, allowing users to see all messages tagged with same tags.
