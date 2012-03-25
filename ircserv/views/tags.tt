@@ -1,3 +1,4 @@
+<p>[<a href="/">home</a>]</p>
 <div id="all">
   <ul>
   <% FOREACH line IN irc %>

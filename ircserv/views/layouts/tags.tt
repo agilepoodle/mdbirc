@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
-<meta http-equiv="refresh" content="3"> 
 <title>ircserv</title>
 <link rel="stylesheet" href="<% request.uri_base %>/css/style.css" />
 
